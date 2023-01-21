@@ -1,0 +1,17 @@
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\bin\Release\net6.0-windows\youtubedlui.exe
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\bin\Release\net6.0-windows\youtubedlui.deps.json
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\bin\Release\net6.0-windows\youtubedlui.runtimeconfig.json
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\bin\Release\net6.0-windows\youtubedlui.dll
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\bin\Release\net6.0-windows\youtubedlui.pdb
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.csproj.AssemblyReference.cache
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.Form1.resources
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.csproj.GenerateResource.cache
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.AssemblyInfoInputs.cache
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.AssemblyInfo.cs
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.dll
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\refint\youtubedlui.dll
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.pdb
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\youtubedlui.genruntimeconfig.cache
+C:\Users\Roberto\source\repos\youtubedlui\youtubedlui\obj\Release\net6.0-windows\ref\youtubedlui.dll

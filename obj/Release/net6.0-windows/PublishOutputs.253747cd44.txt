@@ -1,0 +1,5 @@
+C:\Users\Roberto\Desktop\YouTubeDL GUI\youtubedlui.exe
+C:\Users\Roberto\Desktop\YouTubeDL GUI\youtubedlui.dll
+C:\Users\Roberto\Desktop\YouTubeDL GUI\youtubedlui.deps.json
+C:\Users\Roberto\Desktop\YouTubeDL GUI\youtubedlui.runtimeconfig.json
+C:\Users\Roberto\Desktop\YouTubeDL GUI\youtubedlui.pdb
