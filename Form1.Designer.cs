@@ -44,6 +44,8 @@
             this.buttonBrowseOutput = new System.Windows.Forms.Button();
             this.folderBrowserDialogYTDLPath = new System.Windows.Forms.FolderBrowserDialog();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -140,12 +142,13 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(147, 179);
-            this.label4.MaximumSize = new System.Drawing.Size(100, 0);
+            this.label4.Location = new System.Drawing.Point(177, 60);
+            this.label4.MaximumSize = new System.Drawing.Size(150, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 30);
+            this.label4.Size = new System.Drawing.Size(137, 30);
             this.label4.TabIndex = 9;
-            this.label4.Text = "*ffmpeg required for clipping";
+            this.label4.Text = "*yt-dlp technically since ytdl is broken lol";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // saveFileDialogOutputPath
             // 
@@ -186,11 +189,35 @@
             this.linkLabel1.Text = "jegneg.com";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.WebsiteLinkClicked);
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(282, 323);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(67, 15);
+            this.linkLabel2.TabIndex = 15;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "ffmpeg.org";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.FFMPEGLinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(181, 323);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(95, 15);
+            this.linkLabel3.TabIndex = 16;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "yt-dlp on Github";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.YTDLPLinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(427, 347);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.buttonBrowseOutput);
             this.Controls.Add(this.textBoxOutputPath);
@@ -231,5 +258,7 @@
         private Button buttonBrowseOutput;
         private FolderBrowserDialog folderBrowserDialogYTDLPath;
         private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel3;
     }
 }

@@ -15,7 +15,7 @@ namespace youtubedlui
             "mp3"
         };
 
-        private string cmdCommand = "youtube-dl.exe ";
+        private string cmdCommand = "yt-dlp.exe ";
         private string ytdlPath = "";
 
         private void Form1_Load(object sender, EventArgs e)
@@ -106,7 +106,7 @@ namespace youtubedlui
         }
 
         private string buildCommand() {
-            string finalCommand = "/C youtube-dl.exe ";
+            string finalCommand = "/C yt-dlp.exe ";
 
             //select format
             if(comboBox1.Text == "mp4") {
@@ -119,13 +119,14 @@ namespace youtubedlui
             //clipping
             if (checkBox1.Checked) {
                 finalCommand += "--external-downloader ffmpeg --external-downloader-args \"-ss "
-                    + textBoxStartTime.Text + " -t " + EndTimeToDuration() + "\" ";
+                    + textBoxStartTime.Text + " -t " + EndTimeToDuration() + " -c:v libx264\" ";
             }
 
             //output location
             if (!textBoxOutputPath.Text.Equals("")) {
                 finalCommand += "--output \"" + saveFileDialogOutputPath.FileName + "\" ";
             }
+            //MessageBox.Show(finalCommand, "DEBUG", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             return finalCommand;
         }
 
@@ -177,7 +178,7 @@ namespace youtubedlui
             //subtract seconds
             if (start[2] > end[2]) {
                 if (end[1] == 0) {
-                    throw new Exception("Invalid time!");
+                    throw new Exception("Invalid time! Make sure that the end time is GREATER than the start time!\nClick continue to try again.");
                 }
                 end[1]--;
                 end[2] += 60;
@@ -186,7 +187,7 @@ namespace youtubedlui
             //do the same thing with minutes
             if (start[1] > end[1]) {
                 if (end[0] == 0) {
-                    throw new Exception("Invalid time!");
+                    throw new Exception("Invalid time! Make sure that the end time is GREATER than the start time!\nClick continue to try again.");
                 }
                 end[0]--;
                 end[1] += 60;
@@ -194,7 +195,7 @@ namespace youtubedlui
             result[1] = end[1] - start[1];
             //hours
             if (start[0] > end[0]) {
-                throw new Exception("Invalid time!");
+                throw new Exception("Invalid time! Make sure that the end time is GREATER than the start time!\nClick continue to try again.");
             }
             result[0] = end[0] - start[0];
             //turn the resulting array back into a string and return the result
@@ -230,6 +231,26 @@ namespace youtubedlui
                 UseShellExecute = true
             };
             Process.Start(psInfo);
+        }
+
+        private void FFMPEGLinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            ProcessStartInfo psInfo = new ProcessStartInfo {
+                FileName = "https://ffmpeg.org/",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo);
+        }
+
+        private void YTDLPLinkClicked(object sender, LinkLabelLinkClickedEventArgs e) {
+            ProcessStartInfo psInfo = new ProcessStartInfo {
+                FileName = "https://github.com/yt-dlp/yt-dlp",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo);
+        }
+
+        private void label4_Click(object sender, EventArgs e) {
+            //unused
         }
     }
 }
